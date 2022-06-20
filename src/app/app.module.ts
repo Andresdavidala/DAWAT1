@@ -7,11 +7,13 @@ import { LogInComponent } from './log-in/log-in.component';
 import { PrincipalComponent } from './principal/principal.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
     PrincipalComponent,
+
 
   ],
   imports: [

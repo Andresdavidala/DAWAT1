@@ -22,6 +22,7 @@ export class LogInComponent  {
     else{
       
       alert("Error en las credenciales")
+      window.location.reload();
       
     }
   

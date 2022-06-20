@@ -6,12 +6,12 @@
 }
 
 
-
-/* body{
-    background-image: url('/src/assets/image/portadaimg.jpg');
+body{
+    background-image: url('src/assets/image/portadaimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    min-height: 100vh;
+}
 
 
 

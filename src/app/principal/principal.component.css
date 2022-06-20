@@ -7,11 +7,16 @@
 
 
 
-
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
 
 /* header - footer */
 header{
-   background-color: #1b1b1b67;
+   background-color: #1b1b1b00;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +79,7 @@ button{
 
 button:hover{
     background-color: #83cbe9;
+    
 }
 
 
@@ -89,60 +95,6 @@ button:hover{
 
 }
 
+/* menu desplegable */
 
-
-/* plantilla para form inicio sesión */
-.form-InicioSesion{
-    width: 400px;
-    background: #24303c;
-    padding: 10px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 20px;
-    box-shadow: 7px 13px 37px #000;
-    text-align: center;
-}
-
-.form-InicioSesion h4{
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #83cbe9;
-    
-}
-
-.campos{
-  
-    background-color: #24303c;
-    padding: 12px;
-    border-radius: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #1f535c;
-    font-size: 16px;
-    color: #0088a9;
-}
-.campos::placeholder{
-    color: #83cbe9;
-}
-
-
-.form-InicioSesion p{
-    height: 40px;
-    text-align: center;
-    font-size: 10px;
-
-}
-
-.form-InicioSesion .btnIniciar{
-    width: 60%;
-    background: #0088a9;
-    border: none;
-    border-radius: 18px;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-
-}
-.form-InicioSesion .btnIniciar:hover{
-    background-color: #83cbe9;
-}
+/* fin md ↑*/

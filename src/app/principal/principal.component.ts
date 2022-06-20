@@ -10,7 +10,22 @@ import { LogInComponent } from '../log-in/log-in.component';
 export class PrincipalComponent implements OnInit {
 
   constructor() { }
+  cambioText(){
+    var cerrarSesion = document.getElementById('usButton')
+    
+    if(cerrarSesion?.innerHTML == "Guillermo Correa"){
+      cerrarSesion.innerHTML = 'Cerrar Sesión'
 
+    }
+    
+  }
+  cambioUser(){
+    var cerrarSesion = document.getElementById('usButton')
+    if(cerrarSesion?.innerHTML == "Cerrar Sesión"){
+      cerrarSesion.innerHTML = 'Guillermo Correa'
+
+    }
+  }
   ngOnInit(): void {
   }
 
