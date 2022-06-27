@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row">
+      <div class="col-12">
+         <div class="divFormRegister"  *ngIf="modaDataRegister==true" >
+            <app-table-register></app-table-register>
+          </div>
+          <mat-card>
+              <div><button (click)="openModal()" type="button" class="btn btn-success">Registrar</button></div><br>
+             
+
+              <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"> // dataSource entre comillas obtiene los datos del ts
+
+                  <!--- Note that these columns can be defined in any order.
+                        The actual rendered columns are set as a property on the row definition" -->
+                
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="position">
+                    <th mat-header-cell *matHeaderCellDef> No. </th>
+                    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+                  </ng-container>
+                
+                  <ng-container matColumnDef="cedula">
+                    <th mat-header-cell *matHeaderCellDef> Cedula </th>
+                    <td mat-cell *matCellDef="let element"> {{element.cedula}} </td>
+                  </ng-container>
+
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="nombre">
+                    <th mat-header-cell *matHeaderCellDef> Nombre </th>
+                    <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+                  </ng-container>
+                  
+                  <ng-container matColumnDef="apellido">
+                    <th mat-header-cell *matHeaderCellDef> Apellido </th>
+                    <td mat-cell *matCellDef="let element"> {{element.apellido}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="direccion">
+                    <th mat-header-cell *matHeaderCellDef> Dirección </th>
+                    <td mat-cell *matCellDef="let element"> {{element.direccion}} </td>
+                  </ng-container>
+                
+                  <ng-container matColumnDef="edad">
+                    <th mat-header-cell *matHeaderCellDef> Edad </th>
+                    <td mat-cell *matCellDef="let element"> {{element.edad}} </td>
+                  </ng-container>
+                  
+                  
+                  <ng-container matColumnDef="acciones">
+                    <th mat-header-cell *matHeaderCellDef></th>
+                    <td mat-cell *matCellDef="let element" style="text-align: right" >
+                     <a class="pointer" matTooltip="Editar" (click)="openDialog()">
+                      <mat-icon>edit</mat-icon>
+                     </a>  
+                    </td>
+                  </ng-container>
+                  
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> //displayedColumns llama a los datos de cabecera de la tabla
+                  
+                </table>
+                
+          </mat-card>
+
+         
+      </div>
+  </div>
+
+</div>
+

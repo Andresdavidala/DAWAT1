@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400&display=swap');
+
+*{
+    list-style:none;
+    font-family: 'Viga', sans-serif;
+}
+
+.form-InicioSesion{
+    width: 400px;
+    background: #21242762;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px #000;
+    text-align: center;
+}
+
+.form-InicioSesion h4{
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #83cbe9;
+    font-family: 'Viga', sans-serif;
+    
+}
+
+.campos{
+  
+    background-color: #24303c79;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #1f535c;
+    font-size: 16px;
+    color: #83cbe9;
+}
+.campos::placeholder{
+    color: #83cae95e;
+    font-size: 16px;
+}
+
+
+.form-InicioSesion p{
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.form-InicioSesion .btnIniciar{
+    width: 60%;
+    background: #0087a9c4;
+    border: none;
+    border-radius: 18px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+.form-InicioSesion .btnIniciar:hover{
+    background-color: #83cae98a;
+}
+.closeModal{
+    text-align: right;
+    
+}
+
+.btnClose{
+    position: fixed;
+    top: 120px;
+    margin-left: -30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}

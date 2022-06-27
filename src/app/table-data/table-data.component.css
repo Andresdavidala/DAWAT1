@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+
+.divFormRegister{
+  position: absolute;
+  z-index: 1;
+  height: 95vh;
+  width: 95vw;
+  
+  backdrop-filter: blur(6px);
+}
+.pointer{
+  cursor: pointer;
+  color: orange;
+}
